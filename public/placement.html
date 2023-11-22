@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg" href="images/FoliLogo.svg" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Foli Advertising - Create Ad</title>
+	</head>
+	<body class="font-custom">
+		<header
+			class="px-4 md:px-12 h-24 bg-primary flex items-center justify-between fixed top-0 w-full z-[2]"
+		>
+			<div class="flex items-center gap-x-3">
+				<img src="images/foli.svg" alt="" />
+				<span class="text-3xl font-medium text-secondary"
+					>Foli Advertising</span
+				>
+			</div>
+			<a class="hidden md:flex text-xl text-secondary" href="">
+				<span>Help ?</span>
+			</a>
+			<button
+				class="hidden md:flex items-center gap-x-5 text-xl text-secondary"
+			>
+				<span>Taiwo Adeyemi</span>
+				<svg
+					width="15"
+					height="8"
+					viewBox="0 0 15 8"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M0.167836 0.167835C0.220903 0.114633 0.283945 0.0724243 0.35335 0.0436242C0.422755 0.0148242 0.49716 -3.98375e-07 0.572304 -3.98375e-07C0.647447 -3.98375e-07 0.721853 0.0148242 0.791258 0.0436242C0.860663 0.0724243 0.923705 0.114633 0.976772 0.167835L7.4277 6.6199L13.8786 0.167835C13.9859 0.0605634 14.1314 0.000299251 14.2831 0.000299251C14.4348 0.000299251 14.5803 0.0605634 14.6876 0.167835C14.7948 0.275107 14.8551 0.420598 14.8551 0.572303C14.8551 0.724008 14.7948 0.8695 14.6876 0.976772L7.83216 7.83216C7.7791 7.88537 7.71605 7.92758 7.64665 7.95638C7.57724 7.98518 7.50284 8 7.4277 8C7.35255 8 7.27815 7.98518 7.20874 7.95638C7.13934 7.92758 7.07629 7.88537 7.02323 7.83216L0.167836 0.976772C0.114634 0.923704 0.0724246 0.860662 0.0436246 0.791257C0.0148246 0.721852 0 0.647447 0 0.572303C0 0.49716 0.0148246 0.422755 0.0436246 0.35335C0.0724246 0.283945 0.114634 0.220902 0.167836 0.167835V0.167835Z"
+						fill="#06423D"
+					/>
+				</svg>
+			</button>
+		</header>
+		<main
+			class="pt-32 pb-36 md:pb-0 flex flex-col items-center justify-center relative"
+		>
+			<div
+				class="w-full md:w-[85%] lg:w-[70%] flex flex-col gap-y-14 md:pt-0 md:gap-y-24"
+			>
+				<p class="px-4 md:px-0 text-2xl md:hidden font-semibold">
+					CHOOSE PLACEMENT SECTION
+				</p>
+				<div
+					class="mx-4 md:mx-0 relative flex items-center justify-between before:absolute before:w-full before:z-[-1] before:h-[2px] before:bg-[#c3c3c3] before:top-[50%] before:translate-y-[-50%]"
+				>
+					<div
+						class="relative flex flex-col items-center justify-center gap-y-3"
+					>
+						<span
+							class="flex w-[35px] h-[35px] rounded-full border-[1.5px] border-accent bg-accent text-2xl text-white font-medium items-center justify-center transition-all duration-300"
+							>1</span
+						>
+						<span
+							class="hidden md:flex absolute top-[115%] w-max text-xl font-medium text-black transition-all duration-300"
+							>SELECT AD TYPE</span
+						>
+					</div>
+					<div
+						class="relative flex flex-col items-center justify-center gap-y-3"
+					>
+						<span
+							class="flex w-[35px] h-[35px] rounded-full border-[1.5px] border-accent bg-primary text-2xl text-secondary font-medium items-center justify-center transition-all duration-300"
+							>2</span
+						>
+						<span
+							class="hidden md:flex absolute top-[115%] w-max text-xl font-medium text-accent transition-all duration-300"
+							>CHOOSE PLACEMENT SECTION</span
+						>
+					</div>
+					<div
+						class="relative flex flex-col items-center justify-center gap-y-3"
+					>
+						<span
+							class="flex w-[35px] h-[35px] rounded-full border-[1.5px] border-[#c3c3c3] bg-[#f2f2f2] text-2xl font-medium items-center justify-center transition-all duration-300"
+							>3</span
+						>
+						<span
+							class="hidden md:flex absolute top-[115%] w-max text-xl font-medium text-[#c3c3c3] transition-all duration-300"
+							>SET DURATION & BUDGET</span
+						>
+					</div>
+					<div
+						class="relative flex flex-col items-center justify-center gap-y-3"
+					>
+						<span
+							class="flex w-[35px] h-[35px] rounded-full border-[1.5px] border-[#c3c3c3] bg-[#f2f2f2] text-2xl font-medium items-center justify-center transition-all duration-300"
+							>4</span
+						>
+						<span
+							class="hidden md:flex absolute top-[115%] w-max text-xl font-medium text-[#c3c3c3] transition-all duration-300"
+							>UPLOAD MEDIA</span
+						>
+					</div>
+				</div>
+				<div
+					class="px-4 md:px-0 lg:px-18 xl:px-18 flex flex-col md:grid md:grid-cols-[70%_30%] gap-y-8 gap-x-8 h-full md:h-[313px]"
+				>
+					<div
+						class="h-full relative overflow-hidden rounded-lg shadow-lg md:shadow-xl"
+					>
+						<div
+							class="bg-[#f2f2f2] py-4 px-4 flex flex-col gap-y-4 md:flex-row items-center justify-between absolute w-full top-0"
+						>
+							<div
+								class="flex items-center justify-between w-full md:w-max md:justify-start gap-x-3"
+							>
+								<span class="flex text-xl font-medium text-accent"
+									>Total Cost / Month(&#8358;):</span
+								>
+								<span class="flex text-2xl font-semibold">0.00</span>
+							</div>
+							<div
+								class="flex items-center gap-x-3 p-3 border-[1.5px] border-white bg-white transition-all duration-300 focus-within:border-accent2 w-full md:w-max"
+							>
+								<span>
+									<svg
+										class="fill-accent2"
+										width="16"
+										height="16"
+										viewBox="0 0 20 20"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M8.25 1.5C4.52208 1.5 1.5 4.52208 1.5 8.25C1.5 11.9779 4.52208 15 8.25 15C10.1142 15 11.8006 14.2453 13.023 13.023C14.2453 11.8006 15 10.1142 15 8.25C15 4.52208 11.9779 1.5 8.25 1.5ZM0 8.25C0 3.69365 3.69365 0 8.25 0C12.8063 0 16.5 3.69365 16.5 8.25C16.5 10.2578 15.782 12.0991 14.5899 13.5293L19.2803 18.2197C19.5732 18.5126 19.5732 18.9874 19.2803 19.2803C18.9874 19.5732 18.5126 19.5732 18.2197 19.2803L13.5293 14.5899C12.0991 15.782 10.2578 16.5 8.25 16.5C3.69365 16.5 0 12.8063 0 8.25Z"
+										/>
+									</svg>
+								</span>
+								<input
+									class="grow w-[90%] h-full text-xl outline-none border-none"
+									type="text"
+									placeholder="Filter sections"
+								/>
+							</div>
+						</div>
+						<div
+							class="pt-36 md:pt-24 px-4 flex flex-col gap-y-5 h-max md:h-full md:overflow-y-scroll"
+						>
+							<div class="border-b py-5">
+								<div class="flex items-center justify-between">
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="homeSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent2 cursor-pointer"
+											type="checkbox"
+											name=""
+											id="homeSection"
+										/>
+										<span class="text-xl text-secondary font-semibold"
+											>Home</span
+										>
+									</label>
+									<span class="text-xl text-secondary">
+										&#8358; 150,000.00(per month)
+									</span>
+								</div>
+							</div>
+							<div class="border-b py-5 flex flex-col gap-y-8">
+								<div class="flex items-center justify-between">
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent2 cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl text-secondary font-semibold"
+											>News</span
+										>
+									</label>
+									<span class="text-xl text-secondary">
+										&#8358; 100,000.00(per month)
+									</span>
+								</div>
+								<div class="px-4 flex flex-wrap gap-8">
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>Politics :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>Government :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>International :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>GCPR :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>CBN :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+								</div>
+							</div>
+							<div class="border-b py-5 flex flex-col gap-y-8">
+								<div class="flex items-center justify-between">
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl text-secondary font-semibold"
+											>News</span
+										>
+									</label>
+									<span class="text-xl text-secondary">
+										&#8358; 100,000.00(per month)
+									</span>
+								</div>
+								<div class="px-4 flex flex-wrap gap-8">
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>Politics :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>Government :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>International :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>GCPR :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>CBN :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+								</div>
+							</div>
+							<div class="border-b py-5 flex flex-col gap-y-8">
+								<div class="flex items-center justify-between">
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl text-secondary font-semibold"
+											>News</span
+										>
+									</label>
+									<span class="text-xl text-secondary">
+										&#8358; 100,000.00(per month)
+									</span>
+								</div>
+								<div class="px-4 flex flex-wrap gap-8">
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>Politics :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>Government :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>International :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>GCPR :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>CBN :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+								</div>
+							</div>
+							<div class="border-b py-5 flex flex-col gap-y-8">
+								<div class="flex items-center justify-between">
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl text-secondary font-semibold"
+											>News</span
+										>
+									</label>
+									<span class="text-xl text-secondary">
+										&#8358; 100,000.00(per month)
+									</span>
+								</div>
+								<div class="px-4 flex flex-wrap gap-8">
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>Politics :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>Government :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>International :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>GCPR :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+									<label
+										class="flex items-center gap-x-3 cursor-pointer"
+										for="newsSection"
+									>
+										<input
+											class="w-[15px] h-[15px] accent-accent cursor-pointer"
+											type="checkbox"
+											name=""
+											id="newsSection"
+										/>
+										<span class="text-xl"
+											>CBN :
+											<span class="text-yellow-500 font-semibold"
+												>10%</span
+											></span
+										>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-first md:order-none overflow-hidden">
+						<p class="text-xl font-medium text-[#c3c3c3] mb-5">
+							Selected sections will show here
+						</p>
+						<div
+							class="flex items-center md:flex-wrap gap-4 w-full overflow-x-auto"
+						>
+							<div
+								class="w-max flex items-center gap-x-4 rounded-full bg-[#f4f4f4] py-3 px-5 cursor-pointer"
+							>
+								<span class="text-xl text-[#525252] font-medium">Politics</span>
+								<span
+									><svg
+										width="12"
+										height="13"
+										viewBox="0 0 12 13"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12 1.70857L10.7914 0.5L6 5.29143L1.20857 0.5L0 1.70857L4.79143 6.5L0 11.2914L1.20857 12.5L6 7.70857L10.7914 12.5L12 11.2914L7.20857 6.5L12 1.70857Z"
+											fill="#525252"
+										/>
+									</svg>
+								</span>
+							</div>
+							<div
+								class="w-max flex items-center gap-x-4 rounded-full bg-[#f4f4f4] py-3 px-5 cursor-pointer"
+							>
+								<span class="text-xl text-[#525252] font-medium">Politics</span>
+								<span
+									><svg
+										width="12"
+										height="13"
+										viewBox="0 0 12 13"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12 1.70857L10.7914 0.5L6 5.29143L1.20857 0.5L0 1.70857L4.79143 6.5L0 11.2914L1.20857 12.5L6 7.70857L10.7914 12.5L12 11.2914L7.20857 6.5L12 1.70857Z"
+											fill="#525252"
+										/>
+									</svg>
+								</span>
+							</div>
+							<div
+								class="w-max flex items-center gap-x-4 rounded-full bg-[#f4f4f4] py-3 px-5 cursor-pointer"
+							>
+								<span class="text-xl text-[#525252] font-medium">Politics</span>
+								<span
+									><svg
+										width="12"
+										height="13"
+										viewBox="0 0 12 13"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12 1.70857L10.7914 0.5L6 5.29143L1.20857 0.5L0 1.70857L4.79143 6.5L0 11.2914L1.20857 12.5L6 7.70857L10.7914 12.5L12 11.2914L7.20857 6.5L12 1.70857Z"
+											fill="#525252"
+										/>
+									</svg>
+								</span>
+							</div>
+							<div
+								class="w-max flex items-center gap-x-4 rounded-full bg-[#f4f4f4] py-3 px-5 cursor-pointer"
+							>
+								<span class="text-xl text-[#525252] font-medium">Politics</span>
+								<span
+									><svg
+										width="12"
+										height="13"
+										viewBox="0 0 12 13"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12 1.70857L10.7914 0.5L6 5.29143L1.20857 0.5L0 1.70857L4.79143 6.5L0 11.2914L1.20857 12.5L6 7.70857L10.7914 12.5L12 11.2914L7.20857 6.5L12 1.70857Z"
+											fill="#525252"
+										/>
+									</svg>
+								</span>
+							</div>
+							<div
+								class="w-max flex items-center gap-x-4 rounded-full bg-[#f4f4f4] py-3 px-5 cursor-pointer"
+							>
+								<span class="text-xl text-[#525252] font-medium"
+									>Entertainment</span
+								>
+								<span
+									><svg
+										width="12"
+										height="13"
+										viewBox="0 0 12 13"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12 1.70857L10.7914 0.5L6 5.29143L1.20857 0.5L0 1.70857L4.79143 6.5L0 11.2914L1.20857 12.5L6 7.70857L10.7914 12.5L12 11.2914L7.20857 6.5L12 1.70857Z"
+											fill="#525252"
+										/>
+									</svg>
+								</span>
+							</div>
+							<div
+								class="w-max flex items-center gap-x-4 rounded-full bg-[#f4f4f4] py-3 px-5 cursor-pointer"
+							>
+								<span class="text-xl text-[#525252] font-medium"
+									>Technology</span
+								>
+								<span
+									><svg
+										width="12"
+										height="13"
+										viewBox="0 0 12 13"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12 1.70857L10.7914 0.5L6 5.29143L1.20857 0.5L0 1.70857L4.79143 6.5L0 11.2914L1.20857 12.5L6 7.70857L10.7914 12.5L12 11.2914L7.20857 6.5L12 1.70857Z"
+											fill="#525252"
+										/>
+									</svg>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hidden mt-12 md:mt-12 lg:mt-16 w-full px-4 md:px-8 lg:px-12">
+				<label
+					class="flex cursor-pointer w-max gap-x-2 items-center"
+					for="terms"
+				>
+					<input
+						class="accent-accent cursor-pointer w-[15px] h-[15px]"
+						type="checkbox"
+						name=""
+						id="terms"
+					/>
+					<span class="text-xl font-medium"
+						>I accept Foli ads
+						<a href="" class="text-accent">terms of service</a></span
+					>
+				</label>
+			</div>
+			<div
+				class="fixed bottom-0 md:bottom-[3%] w-full md:w-max flex items-center justify-center gap-x-5 py-8 md:py-0 backdrop-blur-xl"
+			>
+				<button
+					class="flex px-16 py-4 rounded-full bg-accent text-xl text-white transition-all duration-200 hover:bg-secondary"
+				>
+					Back
+				</button>
+				<button
+					class="flex px-16 py-4 rounded-full bg-accent text-xl text-white transition-all duration-200 hover:bg-secondary"
+				>
+					Next
+				</button>
+			</div>
+		</main>
+	</body>
+</html>

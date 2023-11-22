@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg" href="images/FoliLogo.svg" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Foli Advertising - Create Ad</title>
+	</head>
+	<body class="font-custom">
+		<header
+			class="px-4 md:px-12 h-24 bg-primary flex items-center justify-between fixed top-0 w-full z-[2]"
+		>
+			<div class="flex items-center gap-x-3">
+				<img src="images/foli.svg" alt="" />
+				<span class="text-3xl font-medium text-secondary"
+					>Foli Advertising</span
+				>
+			</div>
+			<a class="hidden md:flex text-xl text-secondary" href="">
+				<span>Help ?</span>
+			</a>
+			<button
+				class="hidden md:flex items-center gap-x-5 text-xl text-secondary"
+			>
+				<span>Taiwo Adeyemi</span>
+				<svg
+					width="15"
+					height="8"
+					viewBox="0 0 15 8"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M0.167836 0.167835C0.220903 0.114633 0.283945 0.0724243 0.35335 0.0436242C0.422755 0.0148242 0.49716 -3.98375e-07 0.572304 -3.98375e-07C0.647447 -3.98375e-07 0.721853 0.0148242 0.791258 0.0436242C0.860663 0.0724243 0.923705 0.114633 0.976772 0.167835L7.4277 6.6199L13.8786 0.167835C13.9859 0.0605634 14.1314 0.000299251 14.2831 0.000299251C14.4348 0.000299251 14.5803 0.0605634 14.6876 0.167835C14.7948 0.275107 14.8551 0.420598 14.8551 0.572303C14.8551 0.724008 14.7948 0.8695 14.6876 0.976772L7.83216 7.83216C7.7791 7.88537 7.71605 7.92758 7.64665 7.95638C7.57724 7.98518 7.50284 8 7.4277 8C7.35255 8 7.27815 7.98518 7.20874 7.95638C7.13934 7.92758 7.07629 7.88537 7.02323 7.83216L0.167836 0.976772C0.114634 0.923704 0.0724246 0.860662 0.0436246 0.791257C0.0148246 0.721852 0 0.647447 0 0.572303C0 0.49716 0.0148246 0.422755 0.0436246 0.35335C0.0724246 0.283945 0.114634 0.220902 0.167836 0.167835V0.167835Z"
+						fill="#06423D"
+					/>
+				</svg>
+			</button>
+		</header>
+		<main class="pt-32">
+			<div class="px-4 md:px-12 flex items-center justify-between mb-12">
+				<div class="flex items-center gap-x-12 md:gap-x-16">
+					<button
+						class="text-xl md:text-2xl font-medium relative before:absolute before:top-[120%] before:w-[120%] before:border-t-[2px] before:border-t-accent2"
+					>
+						Running Ads
+					</button>
+					<button
+						class="text-xl md:text-2xl font-medium relative text-[#a7a6a6]"
+					>
+						Completed Ads
+					</button>
+				</div>
+				<a
+					href="create.html"
+					class="px-10 py-4 bg-accent text-xl font-medium rounded-full text-white transition-all duration-300 hover:bg-secondary"
+					>Create Ad</a
+				>
+			</div>
+			<div class="px-4 md:px-12">
+				<table
+					class="w-full border-separate border-spacing-y-[1.3em]"
+					cellpadding="12"
+					cellspacing="0"
+				>
+					<thead class="bg-[#fafafa]">
+						<tr class="text-xl">
+							<th class="text-center">Campaign Name</th>
+							<th class="text-center hidden md:table-cell">AD Type</th>
+							<th class="text-center hidden md:table-cell">Status</th>
+							<th class="text-center hidden lg:table-cell">Start Date</th>
+							<th class="text-center hidden lg:table-cell">End Date</th>
+							<th class="text-center hidden md:table-cell">Total Budget</th>
+							<th class="text-center hidden md:table-cell">Spent</th>
+							<th class="text-center">Clicks</th>
+							<th class="text-center">Views</th>
+							<th class="text-center">Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-xl text-center">Business Promo</td>
+							<td class="text-xl text-center hidden md:table-cell">A</td>
+							<td
+								class="text-xl text-center hidden md:table-cell font-medium text-[#56C568]"
+							>
+								Running
+							</td>
+							<td class="text-xl text-center hidden lg:table-cell">
+								22-05-2022
+							</td>
+							<td class="text-xl text-center hidden lg:table-cell">
+								15-06-2022
+							</td>
+							<td class="text-xl text-center hidden md:table-cell">
+								&#8358;90,000
+							</td>
+							<td class="text-xl text-center hidden md:table-cell">
+								&#8358;30,000
+							</td>
+							<td class="text-xl text-center">1000</td>
+							<td class="text-xl text-center">10000</td>
+							<td class="text-xl text-center relative">
+								<button
+									class="relative left-5 xl:left-10 w-[35px] h-[35px] flex items-center justify-center rounded-full transition-all duration-300 hover:bg-[#eaeaea]"
+								>
+									<svg
+										width="20"
+										height="5"
+										viewBox="0 0 24 5"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M0.342564 3.75436C0.195066 3.52971 0.0921631 3.27728 0.0397701 3.01157C-0.0126228 2.74586 -0.0134754 2.47212 0.0372639 2.20607C0.0880032 1.94002 0.189333 1.68691 0.335428 1.46129C0.481524 1.23568 0.669506 1.042 0.888569 0.891383C1.10763 0.740772 1.35346 0.636197 1.61192 0.583672C1.87039 0.531147 2.13638 0.531708 2.39464 0.585319C2.65289 0.638929 2.8983 0.744534 3.11676 0.896066C3.33523 1.0476 3.52244 1.24207 3.66764 1.4683C3.93855 1.92178 4.02814 2.46566 3.9176 2.9857C3.80705 3.50573 3.50498 3.96144 3.07482 4.25709C2.64467 4.55274 2.11992 4.66533 1.6108 4.5712C1.10168 4.47707 0.647821 4.18356 0.344563 3.75231L0.342564 3.75436ZM10.0039 2.6103C10.0039 3.15603 10.2145 3.6794 10.5895 4.06529C10.9645 4.45118 11.473 4.66797 12.0033 4.66797C12.5336 4.66797 13.0422 4.45118 13.4171 4.06529C13.7921 3.6794 14.0028 3.15603 14.0028 2.6103C14.0028 2.06457 13.7921 1.5412 13.4171 1.15531C13.0422 0.769423 12.5336 0.552634 12.0033 0.552634C11.473 0.552634 10.9645 0.769423 10.5895 1.15531C10.2145 1.5412 10.0039 2.06457 10.0039 2.6103ZM20.0011 2.6103C20.0011 3.15603 20.2118 3.6794 20.5867 4.06529C20.9617 4.45118 21.4703 4.66797 22.0006 4.66797C22.5308 4.66797 23.0394 4.45118 23.4144 4.06529C23.7893 3.6794 24 3.15603 24 2.6103C24 2.06457 23.7893 1.5412 23.4144 1.15531C23.0394 0.769423 22.5308 0.552634 22.0006 0.552634C21.4703 0.552634 20.9617 0.769423 20.5867 1.15531C20.2118 1.5412 20.0011 2.06457 20.0011 2.6103Z"
+											fill="#298C84"
+										/>
+									</svg>
+								</button>
+								<div
+									class="hidden absolute w-[160px] bg-white rounded-lg py-3 shadow-3xl right-[5%]"
+								>
+									<ul class="flex flex-col gap-y-2">
+										<li
+											class="text-accent text-left px-7 font-medium cursor-pointer py-3 transition-all duration-300 hover:bg-[#fafafa]"
+										>
+											View Campaign
+										</li>
+										<li
+											class="text-yellow-500 text-left px-7 font-medium cursor-pointer py-3 transition-all duration-300 hover:bg-[#fafafa]"
+										>
+											Pause Campaign
+										</li>
+										<li
+											class="text-red-500 text-left px-7 font-medium cursor-pointer py-3 transition-all duration-300 hover:bg-[#fafafa]"
+										>
+											Delete Campaign
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-xl text-center">Business Promo</td>
+							<td class="text-xl text-center hidden md:table-cell">A</td>
+							<td
+								class="text-xl text-center hidden md:table-cell font-medium text-[#56C568]"
+							>
+								Running
+							</td>
+							<td class="text-xl text-center hidden lg:table-cell">
+								22-05-2022
+							</td>
+							<td class="text-xl text-center hidden lg:table-cell">
+								15-06-2022
+							</td>
+							<td class="text-xl text-center hidden md:table-cell">
+								&#8358;90,000
+							</td>
+							<td class="text-xl text-center hidden md:table-cell">
+								&#8358;30,000
+							</td>
+							<td class="text-xl text-center">1000</td>
+							<td class="text-xl text-center">10000</td>
+							<td class="text-xl text-center relative">
+								<button
+									class="relative left-5 xl:left-10 w-[35px] h-[35px] flex items-center justify-center rounded-full transition-all duration-300 hover:bg-[#eaeaea]"
+								>
+									<svg
+										width="20"
+										height="5"
+										viewBox="0 0 24 5"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M0.342564 3.75436C0.195066 3.52971 0.0921631 3.27728 0.0397701 3.01157C-0.0126228 2.74586 -0.0134754 2.47212 0.0372639 2.20607C0.0880032 1.94002 0.189333 1.68691 0.335428 1.46129C0.481524 1.23568 0.669506 1.042 0.888569 0.891383C1.10763 0.740772 1.35346 0.636197 1.61192 0.583672C1.87039 0.531147 2.13638 0.531708 2.39464 0.585319C2.65289 0.638929 2.8983 0.744534 3.11676 0.896066C3.33523 1.0476 3.52244 1.24207 3.66764 1.4683C3.93855 1.92178 4.02814 2.46566 3.9176 2.9857C3.80705 3.50573 3.50498 3.96144 3.07482 4.25709C2.64467 4.55274 2.11992 4.66533 1.6108 4.5712C1.10168 4.47707 0.647821 4.18356 0.344563 3.75231L0.342564 3.75436ZM10.0039 2.6103C10.0039 3.15603 10.2145 3.6794 10.5895 4.06529C10.9645 4.45118 11.473 4.66797 12.0033 4.66797C12.5336 4.66797 13.0422 4.45118 13.4171 4.06529C13.7921 3.6794 14.0028 3.15603 14.0028 2.6103C14.0028 2.06457 13.7921 1.5412 13.4171 1.15531C13.0422 0.769423 12.5336 0.552634 12.0033 0.552634C11.473 0.552634 10.9645 0.769423 10.5895 1.15531C10.2145 1.5412 10.0039 2.06457 10.0039 2.6103ZM20.0011 2.6103C20.0011 3.15603 20.2118 3.6794 20.5867 4.06529C20.9617 4.45118 21.4703 4.66797 22.0006 4.66797C22.5308 4.66797 23.0394 4.45118 23.4144 4.06529C23.7893 3.6794 24 3.15603 24 2.6103C24 2.06457 23.7893 1.5412 23.4144 1.15531C23.0394 0.769423 22.5308 0.552634 22.0006 0.552634C21.4703 0.552634 20.9617 0.769423 20.5867 1.15531C20.2118 1.5412 20.0011 2.06457 20.0011 2.6103Z"
+											fill="#298C84"
+										/>
+									</svg>
+								</button>
+								<div
+									class="hidden absolute w-[160px] bg-white rounded-lg py-3 shadow-3xl right-[5%]"
+								>
+									<ul class="flex flex-col gap-y-2">
+										<li
+											class="text-accent text-left px-7 font-medium cursor-pointer py-3 transition-all duration-300 hover:bg-[#fafafa]"
+										>
+											View Campaign
+										</li>
+										<li
+											class="text-yellow-500 text-left px-7 font-medium cursor-pointer py-3 transition-all duration-300 hover:bg-[#fafafa]"
+										>
+											Pause Campaign
+										</li>
+										<li
+											class="text-red-500 text-left px-7 font-medium cursor-pointer py-3 transition-all duration-300 hover:bg-[#fafafa]"
+										>
+											Delete Campaign
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-xl text-center">Business Promo</td>
+							<td class="text-xl text-center hidden md:table-cell">A</td>
+							<td
+								class="text-xl text-center hidden md:table-cell font-medium text-[#56C568]"
+							>
+								Running
+							</td>
+							<td class="text-xl text-center hidden lg:table-cell">
+								22-05-2022
+							</td>
+							<td class="text-xl text-center hidden lg:table-cell">
+								15-06-2022
+							</td>
+							<td class="text-xl text-center hidden md:table-cell">
+								&#8358;90,000
+							</td>
+							<td class="text-xl text-center hidden md:table-cell">
+								&#8358;30,000
+							</td>
+							<td class="text-xl text-center">1000</td>
+							<td class="text-xl text-center">10000</td>
+							<td class="text-xl text-center relative">
+								<button
+									class="relative left-5 xl:left-10 w-[35px] h-[35px] flex items-center justify-center rounded-full transition-all duration-300 hover:bg-[#eaeaea]"
+								>
+									<svg
+										width="20"
+										height="5"
+										viewBox="0 0 24 5"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M0.342564 3.75436C0.195066 3.52971 0.0921631 3.27728 0.0397701 3.01157C-0.0126228 2.74586 -0.0134754 2.47212 0.0372639 2.20607C0.0880032 1.94002 0.189333 1.68691 0.335428 1.46129C0.481524 1.23568 0.669506 1.042 0.888569 0.891383C1.10763 0.740772 1.35346 0.636197 1.61192 0.583672C1.87039 0.531147 2.13638 0.531708 2.39464 0.585319C2.65289 0.638929 2.8983 0.744534 3.11676 0.896066C3.33523 1.0476 3.52244 1.24207 3.66764 1.4683C3.93855 1.92178 4.02814 2.46566 3.9176 2.9857C3.80705 3.50573 3.50498 3.96144 3.07482 4.25709C2.64467 4.55274 2.11992 4.66533 1.6108 4.5712C1.10168 4.47707 0.647821 4.18356 0.344563 3.75231L0.342564 3.75436ZM10.0039 2.6103C10.0039 3.15603 10.2145 3.6794 10.5895 4.06529C10.9645 4.45118 11.473 4.66797 12.0033 4.66797C12.5336 4.66797 13.0422 4.45118 13.4171 4.06529C13.7921 3.6794 14.0028 3.15603 14.0028 2.6103C14.0028 2.06457 13.7921 1.5412 13.4171 1.15531C13.0422 0.769423 12.5336 0.552634 12.0033 0.552634C11.473 0.552634 10.9645 0.769423 10.5895 1.15531C10.2145 1.5412 10.0039 2.06457 10.0039 2.6103ZM20.0011 2.6103C20.0011 3.15603 20.2118 3.6794 20.5867 4.06529C20.9617 4.45118 21.4703 4.66797 22.0006 4.66797C22.5308 4.66797 23.0394 4.45118 23.4144 4.06529C23.7893 3.6794 24 3.15603 24 2.6103C24 2.06457 23.7893 1.5412 23.4144 1.15531C23.0394 0.769423 22.5308 0.552634 22.0006 0.552634C21.4703 0.552634 20.9617 0.769423 20.5867 1.15531C20.2118 1.5412 20.0011 2.06457 20.0011 2.6103Z"
+											fill="#298C84"
+										/>
+									</svg>
+								</button>
+								<div
+									class="hidden absolute w-[160px] bg-white rounded-lg py-3 shadow-3xl right-[5%]"
+								>
+									<ul class="flex flex-col gap-y-2">
+										<li
+											class="text-accent text-left px-7 font-medium cursor-pointer py-3 transition-all duration-300 hover:bg-[#fafafa]"
+										>
+											View Campaign
+										</li>
+										<li
+											class="text-yellow-500 text-left px-7 font-medium cursor-pointer py-3 transition-all duration-300 hover:bg-[#fafafa]"
+										>
+											Pause Campaign
+										</li>
+										<li
+											class="text-red-500 text-left px-7 font-medium cursor-pointer py-3 transition-all duration-300 hover:bg-[#fafafa]"
+										>
+											Delete Campaign
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+	</body>
+</html>

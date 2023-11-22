@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	-webkit-tap-highlight-color: transparent;
+	font-size: 62.5%;
+}
+
+.moreInfo::-webkit-scrollbar {
+	width: 1em;
+}
+
+.moreInfo::-webkit-scrollbar-track {
+	background-color: #fff;
+	margin-block: 0.5em;
+}
+
+.moreInfo::-webkit-scrollbar-thumb {
+	background-color: #76c4bd;
+	border: 0.25rem solid #fff;
+	border-radius: 100vw;
+}
+
+.moreInfo::-webkit-scrollbar-thumb:hover {
+	background-color: #27ada2;
+}
+
+@supports (scrollbar-color: red blue) {
+	* {
+		scrollbar-color: #76c4bd #fff;
+		scrollbar-width: thin;
+		scroll-margin-block: 0.5rem;
+	}
+}
+
+.customTypeInput > input:checked + div {
+	background-color: #4adad2;
+	border-color: #4adad2;
+}
+
+.customTypeInput > input:checked + div > div > span > span {
+	background-color: #06423d;
+}
+
+.customRangeSlide > input::-webkit-slider-thumb {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 26px;
+	height: 26px;
+	border-radius: 50px;
+	background-color: #4adad2;
+	border: 1px solid #298c84;
+	cursor: pointer;
+}
+
+.customRangeSlide > input::-moz-range-thumb {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 26px;
+	height: 26px;
+	border-radius: 50px;
+	background-color: #4adad2;
+	border: 1px solid #298c84;
+	cursor: pointer;
+}
+
+.customRangeSlide > input::-moz-range-progress {
+	background-color: #298c84;
+	height: 100%;
+	border-radius: 50px;
+}
+
+.secPill svg {
+	@apply fill-[#525252] transition-all duration-300;
+}
+
+.secPill:hover svg {
+	@apply fill-red-500;
+}
+
+.modal {
+	@apply w-full h-full md:w-[630px] md:h-[450px] fixed top-0 z-[40] bg-white md:rounded-lg md:left-[9%] lg:left-[20%] xl:left-[25%] lg:top-[5%] md:top-[5%] overflow-hidden;
+}
+
+@media only screen and (min-width: 820px) and (max-width: 820px) {
+	.modal {
+		@apply left-[11.5%];
+	}
+}
